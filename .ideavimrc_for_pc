@@ -16,3 +16,5 @@ let mapleader = "\"
 :map <leader><Esc> :action HideAllWindows<CR>
 :map <leader>e :action GotoImplementation<CR>
 :map <leader>s :action GotoSuperMethod<CR>
+
+set NERDTree
