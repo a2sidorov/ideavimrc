@@ -1,0 +1,18 @@
+map <Enter> o<ESC>
+:map <Cmd-j> ciw<C-r>0<ESC>
+#set timeoutlen=1000
+set surround
+#set number
+#set relativenumber
+set hlsearch
+set ignorecase
+set clipboard
+set tabstop=4 softtabstio=4
+set shiftwidth=4
+
+let mapleader = "\"
+:map <leader>f :action CloseAllEditorsButActive<CR>
+:map <leader>c :action CloseContent<CR>
+:map <leader><Esc> :action HideAllWindows<CR>
+:map <leader>e :action GotoImplementation<CR>
+:map <leader>s :action GotoSuperMethod<CR>
