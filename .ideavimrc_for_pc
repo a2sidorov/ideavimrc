@@ -1,7 +1,6 @@
 map <Enter> o<ESC>
 :map <C-j> ciw<C-r>0<ESC>
 #set timeoutlen=1000
-set surround
 #set number
 #set relativenumber
 set hlsearch
@@ -10,11 +9,15 @@ set clipboard
 set tabstop=4 softtabstio=4
 set shiftwidth=4
 
-let mapleader = "\"
+let mapleader = " "
 :map <leader>f :action CloseAllEditorsButActive<CR>
 :map <leader>c :action CloseContent<CR>
 :map <leader><Esc> :action HideAllWindows<CR>
-:map <leader>e :action GotoImplementation<CR>
+:map <leader>i :action GotoImplementation<CR>
 :map <leader>s :action GotoSuperMethod<CR>
 
+
+set surround
 set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
